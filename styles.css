@@ -1,0 +1,159 @@
+html {
+    font-size: 25 px;
+}
+
+
+body {
+    color: lightgoldenrodyellow;
+    background-color: rgb(24, 24, 24);
+
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #13fcb6;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    margin: 100px auto 20px;
+    font-weight: 600;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #202433
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #a7d9f0;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #388fd6;
+    color: white;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    margin: auto;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+  .box {
+    width: 100%;
+    text-align: center;
+  }
+
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 8px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #13fcb6;
+    color: #151d2f;
+    border-radius: 0.5em;
+    font-weight: 500;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    width: 100%;
+    max-width: 50em;
+    margin: 1em auto;
+    padding: 0.5em;
+}
+
+.search-container input {
+    padding: 1em;
+    border-radius: 0.5em;
+    font-weight: 400;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+    background-color: #3f2b4d;
+    display: flex;
+    padding: 1em;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1.5em;
+    border-radius: 0.5em;
+}
+
+.container-img {
+    width: 100%;
+}
+
+.container button {
+    margin-top: 1em;
+    padding: 1em 0;
+}
+
+.loader {
+    display: none;
+    height: 15em;
+    width: 15em;
+    border: 3em solid #2b304d;
+    border-radius: 50%;
+    border-top-color: #13fcb6;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    animation: spin 3s infinite;
+}
+
+@keyframes spin {
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container {
+        margin: 0.7em;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}
